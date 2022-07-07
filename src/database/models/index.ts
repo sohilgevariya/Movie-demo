@@ -1,0 +1,5 @@
+export * from './user'
+export * from './movie'
+export * from './upvote'
+export * from './downVote'
+export * from './review'

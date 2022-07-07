@@ -1,0 +1,9 @@
+{
+    "db_url": "mongodb+srv://movie:movie@cluster0.szyqd.mongodb.net/movies",
+    "jwt_token_secret": "Movie-Key",
+    "refresh_jwt_token_secret": "Movie-Key",
+    "Winston": {
+        "level": "debug"
+    },
+    "timeZone": "Asia/Calcutta"
+}
