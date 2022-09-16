@@ -34,6 +34,7 @@ const signUp = async (req, res) => {
             _id: addUser?._id,
             name: addUser?.name,
             email: addUser?.email,
+            phoneNumber: addUser?.phoneNumber,
             token
         };
         return res.status(200).json(new common_1.apiResponse(200, "signup successfully!", response));
@@ -62,6 +63,7 @@ const login = async (req, res) => {
             _id: response?._id,
             name: response?.name,
             email: response?.email,
+            phoneNumber: response?.phoneNumber,
             token
         };
         return res.status(200).json(new common_1.apiResponse(200, 'Login successfully', response));

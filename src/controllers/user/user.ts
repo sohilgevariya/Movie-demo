@@ -33,6 +33,7 @@ export const signUp = async (req: Request, res: Response) => {
             _id: addUser?._id,
             name: addUser?.name,
             email: addUser?.email,
+            phoneNumber: addUser?.phoneNumber,
             token
         }
         return res.status(200).json(new apiResponse(200, "signup successfully!", response))
@@ -59,6 +60,7 @@ export const login = async (req: Request, res: Response) => {
             _id: response?._id,
             name: response?.name,
             email: response?.email,
+            phoneNumber: response?.phoneNumber,
             token
         }
         return res.status(200).json(new apiResponse(200, 'Login successfully', response))

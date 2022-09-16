@@ -7,6 +7,7 @@ import { Request, Response } from 'express'
 export const signup = async (req: Request, res: Response, next: any) => {
     const schema = Joi.object({
         email: Joi.string().required().error(new Error('email is required!')),
+        phoneNumber: Joi.string().required().error(new Error('phoneNumber is required!')),
         password: Joi.string().required().error(new Error('password is required!')),
         name: Joi.string().trim().required().error(new Error('name is required!')),
     })
